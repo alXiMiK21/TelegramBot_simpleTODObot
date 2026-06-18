@@ -1,0 +1,80 @@
+# =========================================================
+# --- Project secrets / private config ---
+# =========================================================
+
+# Real environment files
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Local config files
+config.local.*
+settings.local.*
+local_settings.*
+secrets.*
+credentials.*
+
+# Tokens / keys / certificates
+*.key
+*.pem
+*.crt
+*.cer
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# =========================================================
+# --- SQLite / local runtime data ---
+# =========================================================
+
+# Any local databases
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.sqlite3-journal
+
+# Project database files
+mainDB.db
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# If data/ contains only runtime files, you can uncomment this:
+# data/*
+# !data/.gitkeep
+
+# =========================================================
+# --- Telegram bot runtime files ---
+# =========================================================
+
+# Downloaded/user-generated files
+downloads/
+uploads/
+media/
+temp/
+tmp/
+
+# Telegram session files, if libraries create them
+*.session
+*.session-journal
+
+# =========================================================
+# --- Local development files ---
+# =========================================================
+
+# Local notes / drafts
+TODO.local.md
+notes.local.md
+
+# Backup files
+*.backup
+*.old
+*.orig
